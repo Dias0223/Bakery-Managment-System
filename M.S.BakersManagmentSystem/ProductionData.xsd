@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ProductionData" targetNamespace="http://tempuri.org/ProductionData.xsd" xmlns:mstns="http://tempuri.org/ProductionData.xsd" xmlns="http://tempuri.org/ProductionData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="M_S_BakeryConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="M_S_BakeryConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.M.S.BakersManagmentSystem.Properties.Settings.GlobalReference.Default.M_S_BakeryConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ProductionData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ProductionData" msprop:Generator_UserDSName="ProductionData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Production" msprop:Generator_TableClassName="ProductionDataTable" msprop:Generator_TableVarName="tableProduction" msprop:Generator_TablePropName="Production" msprop:Generator_RowDeletingName="ProductionRowDeleting" msprop:Generator_RowChangingName="ProductionRowChanging" msprop:Generator_RowEvHandlerName="ProductionRowChangeEventHandler" msprop:Generator_RowDeletedName="ProductionRowDeleted" msprop:Generator_UserTableName="Production" msprop:Generator_RowChangedName="ProductionRowChanged" msprop:Generator_RowEvArgName="ProductionRowChangeEvent" msprop:Generator_RowClassName="ProductionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pro_No" msprop:Generator_ColumnVarNameInTable="columnPro_No" msprop:Generator_ColumnPropNameInRow="Pro_No" msprop:Generator_ColumnPropNameInTable="Pro_NoColumn" msprop:Generator_UserColumnName="Pro_No">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Pro_Qty" msprop:Generator_ColumnVarNameInTable="columnPro_Qty" msprop:Generator_ColumnPropNameInRow="Pro_Qty" msprop:Generator_ColumnPropNameInTable="Pro_QtyColumn" msprop:Generator_UserColumnName="Pro_Qty" type="xs:int" minOccurs="0" />
+              <xs:element name="Pro_Damage_Qty" msprop:Generator_ColumnVarNameInTable="columnPro_Damage_Qty" msprop:Generator_ColumnPropNameInRow="Pro_Damage_Qty" msprop:Generator_ColumnPropNameInTable="Pro_Damage_QtyColumn" msprop:Generator_UserColumnName="Pro_Damage_Qty" type="xs:int" minOccurs="0" />
+              <xs:element name="Pro_Date" msprop:Generator_ColumnVarNameInTable="columnPro_Date" msprop:Generator_ColumnPropNameInRow="Pro_Date" msprop:Generator_ColumnPropNameInTable="Pro_DateColumn" msprop:Generator_UserColumnName="Pro_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Pro_Time" msprop:Generator_ColumnVarNameInTable="columnPro_Time" msprop:Generator_ColumnPropNameInRow="Pro_Time" msprop:Generator_ColumnPropNameInTable="Pro_TimeColumn" msprop:Generator_UserColumnName="Pro_Time" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="P_ID" msprop:Generator_ColumnVarNameInTable="columnP_ID" msprop:Generator_ColumnPropNameInRow="P_ID" msprop:Generator_ColumnPropNameInTable="P_IDColumn" msprop:Generator_UserColumnName="P_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Production" />
+      <xs:field xpath="mstns:Pro_No" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

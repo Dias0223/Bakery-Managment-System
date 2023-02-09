@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SellData" targetNamespace="http://tempuri.org/SellData.xsd" xmlns:mstns="http://tempuri.org/SellData.xsd" xmlns="http://tempuri.org/SellData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="M_S_BakeryConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="M_S_BakeryConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.M.S.BakersManagmentSystem.Properties.Settings.GlobalReference.Default.M_S_BakeryConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SellData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SellData" msprop:Generator_UserDSName="SellData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Sale_Invoice" msprop:Generator_TableClassName="Sale_InvoiceDataTable" msprop:Generator_TableVarName="tableSale_Invoice" msprop:Generator_TablePropName="Sale_Invoice" msprop:Generator_RowDeletingName="Sale_InvoiceRowDeleting" msprop:Generator_RowChangingName="Sale_InvoiceRowChanging" msprop:Generator_RowEvHandlerName="Sale_InvoiceRowChangeEventHandler" msprop:Generator_RowDeletedName="Sale_InvoiceRowDeleted" msprop:Generator_UserTableName="Sale_Invoice" msprop:Generator_RowChangedName="Sale_InvoiceRowChanged" msprop:Generator_RowEvArgName="Sale_InvoiceRowChangeEvent" msprop:Generator_RowClassName="Sale_InvoiceRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SI_ID" msprop:Generator_ColumnVarNameInTable="columnSI_ID" msprop:Generator_ColumnPropNameInRow="SI_ID" msprop:Generator_ColumnPropNameInTable="SI_IDColumn" msprop:Generator_UserColumnName="SI_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DP_ID" msprop:Generator_ColumnVarNameInTable="columnDP_ID" msprop:Generator_ColumnPropNameInRow="DP_ID" msprop:Generator_ColumnPropNameInTable="DP_IDColumn" msprop:Generator_UserColumnName="DP_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="P_ID" msprop:Generator_ColumnVarNameInTable="columnP_ID" msprop:Generator_ColumnPropNameInRow="P_ID" msprop:Generator_ColumnPropNameInTable="P_IDColumn" msprop:Generator_UserColumnName="P_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sale_Date" msprop:Generator_ColumnVarNameInTable="columnSale_Date" msprop:Generator_ColumnPropNameInRow="Sale_Date" msprop:Generator_ColumnPropNameInTable="Sale_DateColumn" msprop:Generator_UserColumnName="Sale_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Sale_Qty" msprop:Generator_ColumnVarNameInTable="columnSale_Qty" msprop:Generator_ColumnPropNameInRow="Sale_Qty" msprop:Generator_ColumnPropNameInTable="Sale_QtyColumn" msprop:Generator_UserColumnName="Sale_Qty" type="xs:int" minOccurs="0" />
+              <xs:element name="Sale_Unit_Price" msprop:Generator_ColumnVarNameInTable="columnSale_Unit_Price" msprop:Generator_ColumnPropNameInRow="Sale_Unit_Price" msprop:Generator_ColumnPropNameInTable="Sale_Unit_PriceColumn" msprop:Generator_UserColumnName="Sale_Unit_Price" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Sale_Total_Amount" msprop:Generator_ColumnVarNameInTable="columnSale_Total_Amount" msprop:Generator_ColumnPropNameInRow="Sale_Total_Amount" msprop:Generator_ColumnPropNameInTable="Sale_Total_AmountColumn" msprop:Generator_UserColumnName="Sale_Total_Amount" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Sale_Invoice" />
+      <xs:field xpath="mstns:SI_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
